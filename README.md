@@ -28,7 +28,7 @@ Execute the following steps to set up your environment:
    Download the `PBSD_LS.py` script to your local machine.
 
 4. **Download the Resources Folder**:
-   Download the necessary data files from the "database" folder and ensure they are in the same directory as the `PBSD_LS.py` script.
+   Download the necessary data files from the "resources" folder and ensure they are in the same directory as the `PBSD_LS.py` script.
 
 ## Running the Application
 
