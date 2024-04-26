@@ -7,12 +7,12 @@ from PIL import Image, ImageOps
 import io
 
 # Import the dataset
-df = pd.read_excel('data.xlsx', sheet_name='data')[['icolDia', 'aspect_ratio', 'iaxialloadratio', 'ifc',
+df = pd.read_excel('resources/data.xlsx', sheet_name='data')[['icolDia', 'aspect_ratio', 'iaxialloadratio', 'ifc',
                                                      'ivf', 'ify', 'iroh_long', 'irohst', 'DS1', 'DS2', 'DS3', 'DS4']]
 data = df.iloc[:, :8]
 resp = df.iloc[:, 8:]
 
-filename = 'model.pkl'
+filename = 'resources/model.pkl'
 model = load(open(filename, 'rb'))
 def check_value(value, range):
     try:
