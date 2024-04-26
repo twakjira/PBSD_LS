@@ -80,7 +80,7 @@ layout = [
  
 ]
 sg.theme('DefaultNoMoreNagging')
-image_filename = 'fig_DS.png'
+image_filename = 'resources/fig_DS.png'
 img_data = get_img_data(image_filename, scale=2.5)
 scaled_fig_DS = sg.Image(data=img_data, key='-IMAGE-')
 layout += [
@@ -101,8 +101,8 @@ layout += [
         ], vertical_alignment='top')
     ]
 ]
-img2 = Image.open('image2.png')
-img4 = Image.open('image4.png')
+img2 = Image.open('resources/image2.png')
+img4 = Image.open('resources/image4.png')
 widths = [img2.width, img4.width]
 heights = [img2.height,  img4.height]
 min_width = min(widths)
@@ -167,4 +167,3 @@ while True:
         for i, pred in enumerate(denormalized_predictions):
             window[f'-PREDICTION-DS{i+1}-'].update(f"{pred:.4f}") 
 window.close()
-
